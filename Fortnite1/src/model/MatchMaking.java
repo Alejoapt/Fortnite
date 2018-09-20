@@ -46,6 +46,11 @@ public class MatchMaking {
 		}
 		return ranking;
 	}
+	
+	public int sizePlayers(){
+		return players.size();
+	}
+	
 	public ArrayList<Player> getPlayer(){
 		return players;
 	}

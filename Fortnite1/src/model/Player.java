@@ -2,7 +2,7 @@ package model;
 
 import java.util.LinkedList;
 
-public class Player extends Locker {
+public class Player{
 
 	
 	/**
@@ -78,14 +78,14 @@ public class Player extends Locker {
 	}
 
 	// Statit conection with the locker of the player
-	static String banner = locker.getBanner();
-	static String outfit = locker.getOutfit();
-	static String backBing = locker.getBackBing();
-	static String harvestingTool = locker.getHarvestingTool();
-	static String glider = locker.getGlider();
-	static String contrail = locker.getContrail();
-	static String loadingString = locker.getLoadingScreen();
-	static String emotes = locker.getEmotes();
+//	static String banner = locker.getBanner();
+//	static String outfit = locker.getOutfit();
+//	static String backBing = locker.getBackBing();
+//	static String harvestingTool = locker.getHarvestingTool();
+//	static String glider = locker.getGlider();
+//	static String contrail = locker.getContrail();
+//	static String loadingString = locker.getLoadingScreen();
+//	static String emotes = locker.getEmotes();
 
 	/**
 	 * The constructor of the class Player
@@ -102,7 +102,7 @@ public class Player extends Locker {
 	public Player(String nickname, Integer elimintations, Integer matchesPlayed, int timePlayed, double matchXP,
 			double friendsXP, Integer accountLevel, Integer passLevel, boolean passPurchased) {
 
-		super(banner, outfit, backBing, harvestingTool, glider, contrail, loadingString, emotes);
+//		super(banner, outfit, backBing, harvestingTool, glider, contrail, loadingString, emotes);
 
 		this.nickname = nickname;
 		this.elimintations = elimintations;
