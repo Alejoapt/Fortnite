@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.effect.ColorInput?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox layoutX="-1.0" layoutY="1.0" prefHeight="456.0" prefWidth="717.0">
+         <children>
+            <MenuBar prefHeight="55.0" prefWidth="665.0" VBox.vgrow="NEVER">
+               <menus>
+                  <Menu mnemonicParsing="false" text="Ranking" />
+                  <Menu mnemonicParsing="false" text="Gamemode">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Solo" />
+                        <MenuItem mnemonicParsing="false" text="Duo" />
+                        <MenuItem mnemonicParsing="false" text="Squad" />
+                        <MenuItem mnemonicParsing="false" text="Special Events" />
+                     </items>
+                  </Menu>
+               </menus>
+            </MenuBar>
+            <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="406.0" prefWidth="690.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <Label alignment="CENTER" layoutX="155.0" layoutY="177.0" style="&#10;" text="Drag components from Library here…" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="406.0" fitWidth="720.0">
+                     <image>
+                        <Image url="@../../../../../Downloads/fortnitewall.jpg" />
+                     </image>
+                  </ImageView>
+                  <ButtonBar layoutX="479.0" layoutY="297.0" />
+                  <Label layoutX="135.0" layoutY="50.0" prefHeight="37.0" prefWidth="88.0" text="Skin" textAlignment="RIGHT" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="31.0" />
+                     </font></Label>
+                  <Button layoutX="557.0" layoutY="241.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="94.0" text="Recharge" />
+                  <Button layoutX="557.0" layoutY="270.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="94.0" text="Shoot" />
+                  <Button layoutX="557.0" layoutY="298.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="94.0" text="Munition" />
+                  <Button layoutX="557.0" layoutY="214.0" mnemonicParsing="false" text="Add Weapon" />
+                  <GridPane gridLinesVisible="true" layoutX="372.0" layoutY="336.0" prefHeight="30.0" prefWidth="277.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <effect>
+                        <ColorInput paint="#fcf6f6" />
+                     </effect>
+                  </GridPane>
+                  <ImageView fitHeight="276.0" fitWidth="258.0" layoutX="43.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Downloads/bearskin.png" />
+                     </image></ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
