@@ -1,5 +1,7 @@
 package model;
 
+import java.util.LinkedList;
+
 public class Player extends Locker {
 
 	
@@ -111,6 +113,8 @@ public class Player extends Locker {
 		this.accountLevel = accountLevel;
 		this.seasonLevel = passLevel;
 		this.passPurchased = passPurchased;
+		
+		weapons = new Queue<Weapon>();
 	}
 
 	public String getNickname() {
@@ -198,9 +202,7 @@ public class Player extends Locker {
 	}
 	
 	public void addWeapon(Weapon weapon){
-		
-		int type = (int) Math.random()*4;
-		
+				
 		weapons.offer(weapon);
 		
 	}

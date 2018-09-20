@@ -4,9 +4,12 @@ import java.util.ArrayList;
 
 public class MatchMaking {
 
-	private ArrayList<Player> players = new ArrayList<Player>();
+	 ArrayList<Player> players;
 	
-	public void MatchMaking(){ 
+	public MatchMaking(){ 
+		players = new ArrayList<Player>();
+		players.add(0,new Player("ashgaron", 1700, 1500, 2880, 120, 10, 328, 100, true));
+		players.add(1,new Player("Cjimenez", 5, 30, 40, 0, 0, 36, 10, false));	
 	}
 	
 	public ArrayList<Character> ranking(){
@@ -43,7 +46,9 @@ public class MatchMaking {
 		}
 		return ranking;
 	}
-	
+	public ArrayList<Player> getPlayer(){
+		return players;
+	}
 	public ArrayList<Player> addPlayer(String nick){
 		
 		for (int i = 0; i < players.size() && nick != players.get(i).getNickname(); i++) {

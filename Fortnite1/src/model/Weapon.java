@@ -7,16 +7,16 @@ public class Weapon extends Exception {
 	 */
 	private static final long serialVersionUID = 1L;
 	private String name;
-	private Integer munition;
+	private int munition;
 	private String image;
-	private String type;
+	private int type;
 	public final static int pistol = 0;
 	public final static int shotgun = 1;
 	public final static int assaultRifle = 2;
 	public final static int sniper = 3;
 	public final static int launcher = 4;
 
-	public Weapon(String name, Integer munition, String imagen, String type) {
+	public Weapon(String name, int munition, String imagen, int type) {
 		super();
 		this.name = name;
 		this.munition = munition;
@@ -48,11 +48,11 @@ public class Weapon extends Exception {
 		this.image = image;
 	}
 
-	public String getType() {
+	public int getType() {
 		return type;
 	}
 
-	public void setType(String type) {
+	public void setType(int type) {
 		this.type = type;
 	}
 

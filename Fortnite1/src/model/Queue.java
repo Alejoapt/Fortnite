@@ -1,17 +1,18 @@
 package model;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 
 public class Queue<T> implements IQueue<T> {
 
-		private ArrayList<T> list;
+		private LinkedList<T> list;
 
 		public Queue(){
 			newQueue();
 		}
 
 		public void newQueue() {
-			list = new ArrayList<T>();
+			list = new LinkedList<T>();
 		}
 
 		public T check() {
